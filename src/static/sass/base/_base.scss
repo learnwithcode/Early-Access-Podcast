@@ -1,0 +1,160 @@
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    // This define what 1rem is:
+    font-size: 62.5%; //1rem = 10px; 10px/16px = 62.5
+
+    // @include respond(phone) {
+    //     font-size: 50%;
+    // } 
+ 
+    @include respond(4k) {
+        font-size: 87.5%; //1rem = 15px, 15/16 = 93
+    }   
+
+    @include respond(big-desktop) { //width < 1800?
+        font-size: 75%; //1rem = 12px, 12/16 = 75
+    }
+
+    @include respond(tab-land) { //width < 1200?
+        font-size: 56.25%; //1rem = 9px, 9/16 = 56.25
+    }
+
+    @include respond(tab-port) { //width < 900?
+        font-size: 50%; //1rem = 8px, 8/16 = 50%
+    }
+
+    
+    @include respond(phone) { //width < 600?
+        font-size: 43%; //1rem = 7px, 7/16 = 43%
+    }
+}
+
+$color-grey: #eee;
+$color-grey-light: #f5f5f5;
+$color-primary: #ffab00;
+$radius: 3px;
+
+// Function
+@function remy($value, $base: 16px) {
+    @return ($value / $base) * 1rem;
+  }
+  
+  // Mixins
+  @mixin transition($prop: all, $duration: .25s, $timing: cubic-bezier(.4,0,1,1)) {
+    transition: $prop $duration $timing;
+  }
+
+body {
+    box-sizing: border-box; 
+}
+
+// header{
+//     position: relative;
+// }
+
+form {
+    // position: absolute;
+    // top: 40%;
+    // left: 50%;
+    // transform: translate(-50%, -50%);
+    padding: 3rem;
+    margin-top: 12rem;
+    margin-right: auto;
+    margin-left: auto;
+    width: 40rem;
+    background-color: #fff;
+    border-radius: .3rem;
+    box-shadow: 0 15px 35px rgba(50,50,93,.1),0 5px 15px rgba(0,0,0,.07);
+  }
+
+  h1 {
+    margin-top: 0;
+    margin-bottom: 3.236rem;
+    text-align: center;
+    font-size: 2rem;
+    text-transform: uppercase;
+  }
+
+  .form-group {
+    padding: 0;
+    border: 0;
+    
+    & + & {
+      margin-top: 1rem;
+    }
+  }
+  
+  label {
+    display: inline-block;
+    margin-bottom: .5rem;
+    font-size: 1rem;
+    text-transform: uppercase;
+    touch-action: manipulation;
+  }
+  
+  input,
+  textarea ,
+    select,
+    option{
+    display: block;
+    padding: .5rem .75rem;
+    width: 100%;
+    font-size: 1rem;
+    line-height: 1.25;
+    color: #55595c;
+    background-color: #fff;
+    background-image: none;
+    background-clip: padding-box;
+    border-top: 0;
+    border-right: 0;
+    border-bottom: 1px solid $color-grey;
+    border-left: 0;
+    border-radius: $radius;
+    @include transition;
+    
+    &:focus {
+      outline: 0;
+      border-bottom-color: $color-primary;
+    }
+  }
+  
+
+  
+  textarea {
+    resize: vertical;
+  }
+  
+  .btn {
+    display: inline-block;
+    padding: .75rem 1rem;
+    margin-top: 1.618rem;
+    font-weight: 400;
+    text-align: center;
+    text-transform: uppercase;
+    color: #fff;
+    vertical-align: middle;
+    white-space: nowrap;
+    background-color: $color-primary;
+    border: 1px solid transparent;
+    box-shadow: 0 15px 35px rgba(50,50,93,.1),0 5px 15px rgba(0,0,0,.07);
+    cursor: pointer;
+    user-select: none;
+    @include transition;
+    
+    &:focus,
+    &:hover {
+      background-color: lighten($color-primary, 13%);
+      box-shadow: 0 18px 35px rgba(50,50,93,.1),0 8px 15px rgba(0,0,0,.07);
+    }
+    
+    &:focus {
+      outline: 0;
+    }
+  }

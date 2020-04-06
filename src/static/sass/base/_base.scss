@@ -57,6 +57,9 @@ body {
 
 .header{
     padding: 15rem;
+    @include respond(phone) { 
+      padding: 3rem;
+  }
     &__container{
       display: flex;
       justify-content: space-around;
@@ -64,24 +67,44 @@ body {
       flex-wrap: wrap;
     }
 
+    &__logo-box {
+      position: absolute;
+      top: 5rem;
+      left: 10rem;
+
+      @include respond(phone) { 
+          top: 2rem;
+          left: 2rem;
+      }
+  }
+
     &__text-box{
       flex: 0 0 40%; //grow shrink basis.
 
-
+      @include respond(phone) { 
+        flex: 1 0 100%; //grow shrink basis.
+    }
     }
 
     &__form-box{
-      flex: 0 0 30%; //grow shrink basis.
-      
+      flex: 0 0 40%; //grow shrink basis.
+      @include respond(phone) { 
+        flex: 1 0 50%; //grow shrink basis.
+    }
     }
 }
 
 form {
-    padding: 3rem;
+    padding: 4rem;
     width: 40rem;
     background-color: #fff;
     border-radius: .3rem;
     box-shadow: 0 15px 35px rgba(50,50,93,.1),0 5px 15px rgba(0,0,0,.07);
+
+    @include respond(phone){
+      padding: 4rem;
+      width: 45rem;
+    }
   }
 
   .form-title {
@@ -167,4 +190,54 @@ form {
     &:focus {
       outline: 0;
     }
+    
   }
+
+  .btn--green {
+    display: inline-block;
+    text-decoration: none;
+    padding: .75rem 1rem;
+    margin-top: 1.618rem;
+    font-weight: 400;
+    text-align: center;
+    text-transform: uppercase;
+    color: #fff;
+    vertical-align: middle;
+    white-space: nowrap;
+    background-color: #5EEB5B;
+    border: 1px solid transparent;
+    box-shadow: 0 15px 35px rgba(50,50,93,.1),0 5px 15px rgba(0,0,0,.07);
+    cursor: pointer;
+    user-select: none;
+    @include transition;
+    
+    &:focus,
+    &:hover {
+      background-color: lighten($color-primary, 13%);
+      box-shadow: 0 18px 35px rgba(50,50,93,.1),0 8px 15px rgba(0,0,0,.07);
+    }
+    
+    &:focus {
+      outline: 0;
+    }
+    
+  }
+
+
+  .footer {
+    height: 6vh;
+    background-color: #5EEB5B;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    &__text {
+        color: #000000;
+        font-size: 2.4rem;
+        font-weight: 400;
+        text-transform: capitalize;
+        line-height: 2.8rem;
+    }
+    
+}

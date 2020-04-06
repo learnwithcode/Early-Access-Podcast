@@ -10,8 +10,10 @@ body {
 
 .logo {
     font-size: 4.8rem;
-    font-weight: 400;
-    text-transform: lowercase;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #5EEB5B;
+    letter-spacing: 1.6rem;
 
     @include respond(phone) { 
         font-size: 5rem;
@@ -59,8 +61,10 @@ body {
     line-height: 3rem;
 
     @include respond(phone) {
-        font-size: 5rem;
-        line-height: 5rem;
+        font-size: 2rem;
+        line-height: 2rem;
+        margin-top: 20rem;
+        margin-bottom: 10rem;
     }
 }
 

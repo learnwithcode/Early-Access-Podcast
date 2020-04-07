@@ -88,10 +88,7 @@ body {
 
     &__form-box{
       flex: 0 0 40%; //grow shrink basis.
-    //   @include respond(phone) { 
-    //     flex: 1 0 50%; //grow shrink basis.
-        
-    // }
+
     }
 }
 
@@ -103,9 +100,9 @@ form {
     box-shadow: 0 15px 35px rgba(50,50,93,.1),0 5px 15px rgba(0,0,0,.07);
 
     @include respond(phone){
-      height: 45rem;
+      height: 60rem;
       padding: 4rem;
-      width: 45rem;
+      width: 50rem;
     }
   }
 

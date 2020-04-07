@@ -42,12 +42,15 @@ class WhatsappText extends React.Component {
                 <h3 className='heading-tertiary'>
                     ocd ek aisi problem hai jo kisi normal friend, relative ya family member se  share kare to shayad vo kabhi nahi samjhenge kuki ise  vahi samaj skta h jo isse suffer kar raha  hota hai,
                     <br/>
+                    <br/>
                     Isilie Cromunity ne aapke lie community banai hai, jha aap un logo say jud skte h jo aap hi ki trah is problem se lad rahe h!
+                    <br/>
                     <br/>
                     yaha aap apne jaise sufferer se jud kar jaan skte hai vo kis trah ocd se ladrahe h, aap doctors or medicine par  le  sakte h, aap akela feel karte h ocd me to unhe dost bna skte h jo aap ko samjhe
                     <br/>
-                    <h1 className='form-title'>join kijie cromunity whats app par</h1>
+                    <br/>
                 </h3>
+                <h1 className='form-title'>join kijie cromunity whats app par</h1>
             </React.Fragment> 
         )
     }

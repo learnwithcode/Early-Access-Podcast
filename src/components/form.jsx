@@ -10,7 +10,7 @@ class ReactFormLabel extends React.Component {
     }
    }
 
-class EmbedVideo extends React.Component {
+class Whatsapp extends React.Component {
 
     render() {
         return(
@@ -23,12 +23,33 @@ class EmbedVideo extends React.Component {
     }
 }
 
+class WhatsappText extends React.Component {
+    render() {
+        return (
+            <React.Fragment>
+                <h3 className='heading-tertiary'>
+                    ocd ek aisi problem hai jo kisi normal friend, relative ya family member se  share kare to shayad vo kabhi nahi samjhenge kuki ise  vahi samaj skta h jo isse suffer kar raha  hota hai,
+                    <br/>
+                    <br/>
+                    Isilie Cromunity ne aapke lie community banai hai, jha aap un logo say jud skte h jo aap hi ki trah is problem se lad rahe h!
+                    <br/>
+                    <br/>
+                    yaha aap apne jaise sufferer se jud kar jaan skte hai vo kis trah ocd se ladrahe h, aap doctors or medicine par  le  sakte h, aap akela feel karte h ocd me to unhe dost bna skte h jo aap ko samjhe
+                    <br/>
+                    <br/>
+                    <h1 className='form-title'>join kijie cromunity whats app par</h1>
+                </h3>
+            </React.Fragment> 
+        )
+    }
+}
+
 class Form extends React.Component {
     state = {
         email: '',
         phone: '',
         ocd: '',
-        video: false
+        group: false
        }
      
        handleChange = e => {
@@ -57,7 +78,7 @@ class Form extends React.Component {
                    email: '',
                    phone: '',
                    ocd: '',  
-                   video: true  
+                   group: true  
                })  
            }
        })
@@ -69,7 +90,7 @@ class Form extends React.Component {
 
 
    render() {
-       let showvideo = this.state.video
+       let showgroup = this.state.group
        let form = (
             <form className='react-form' onSubmit={(event) => this.onFormSubmit(event)}>
 
@@ -111,6 +132,8 @@ class Form extends React.Component {
             </div>
                <div className='header__container'>
                <div className='header__text-box'>
+
+                  {showgroup ? <WhatsappText/>: 
                    <h3 className='heading-tertiary'>
 
                         ye samay sabhi k lie mushkil hai lekin kabhi koi nahi smajhta ki is situation ocd sufferers ki Anxiety badhna, dar lagna ye sab kisi ko nhi dikhta.
@@ -122,10 +145,11 @@ class Form extends React.Component {
 
                         <h1 className='form-title'>fill the form to listen podcast.</h1>
                     </h3>
+                }  
                </div>
                <div className='header__form-box'>
                    
-                {showvideo ?  <EmbedVideo/> : form}
+                {showgroup ?  <Whatsapp/> : form}
                </div>
                </div>
         </header>

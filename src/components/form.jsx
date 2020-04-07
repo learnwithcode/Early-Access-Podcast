@@ -15,19 +15,19 @@ class Whatsapp extends React.Component {
     render() {
         return(
             <React.Fragment>
-            <h1 className='heading-tertiary'>For contamination ocd</h1>
+            <h2 className='heading-group'>For Contamination Ocd</h2>
             <a id='formButton' target="_blank" className='btn--green' href="https://chat.whatsapp.com/JbyJNdkDTsH40QR9wJbWWK ">Join Whatsapp Group</a>
             <br/>
             <br/>
-            <h1 className='heading-tertiary'>For religious ocd</h1>
+            <h2  className='heading-group'>For Religious Ocd</h2>
             <a id='formButton' target="_blank" className='btn--green' href="https://chat.whatsapp.com/FBY9kwS6wHZBr4kzMy3KH5">Join Whatsapp Group</a>
             <br/>
             <br/>
-            <h1 className='heading-tertiary'>For sexual ocd</h1>
+            <h2  className='heading-group'>For Sexual Ocd</h2>
             <a id='formButton' target="_blank" className='btn--green' href="https://chat.whatsapp.com/HPHfJKnAdYN1ye7zinS5Ze">Join Whatsapp Group</a>
             <br/>
             <br/>
-            <h1 className='heading-tertiary'>Other ocd</h1>
+            <h2  className='heading-group'>Other Ocd</h2>
             <a id='formButton' target="_blank" className='btn--green' href="https://chat.whatsapp.com/HqJhGflNvlKHmPBhKcN4ye">Join Whatsapp Group</a>
             </React.Fragment>
 
@@ -42,12 +42,9 @@ class WhatsappText extends React.Component {
                 <h3 className='heading-tertiary'>
                     ocd ek aisi problem hai jo kisi normal friend, relative ya family member se  share kare to shayad vo kabhi nahi samjhenge kuki ise  vahi samaj skta h jo isse suffer kar raha  hota hai,
                     <br/>
-                    <br/>
                     Isilie Cromunity ne aapke lie community banai hai, jha aap un logo say jud skte h jo aap hi ki trah is problem se lad rahe h!
                     <br/>
-                    <br/>
                     yaha aap apne jaise sufferer se jud kar jaan skte hai vo kis trah ocd se ladrahe h, aap doctors or medicine par  le  sakte h, aap akela feel karte h ocd me to unhe dost bna skte h jo aap ko samjhe
-                    <br/>
                     <br/>
                     <h1 className='form-title'>join kijie cromunity whats app par</h1>
                 </h3>
@@ -93,10 +90,12 @@ class Form extends React.Component {
                    group: true  
                })  
            }
+
        })
        .catch(err => {
-           console.log(err)
-           return alert('Mobile Or Email Exist')
+            console.log(err)
+            return alert('Mobile Or Email Exist')
+        
        });  
       }
 

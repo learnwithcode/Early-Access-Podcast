@@ -65,7 +65,7 @@ body {
       .header__text-box {
         flex: 1 0 100%; } }
   .header__form-box {
-    flex: 0 0 40%; }
+    flex: 1 0 80%; }
 
 form {
   padding: 6rem;
@@ -157,6 +157,7 @@ textarea {
   text-decoration: none;
   padding: .75rem 1rem;
   margin-top: 1.618rem;
+  font-size: 3rem;
   font-weight: 400;
   text-align: center;
   text-transform: uppercase;
@@ -240,6 +241,17 @@ body {
       line-height: 3rem;
       margin-top: 20rem;
       margin-bottom: 10rem; } }
+
+.heading-group {
+  font-size: 2.5rem;
+  font-weight: 400;
+  text-transform: capitalize;
+  line-height: 3rem; }
+  @media (max-width: 37.5em) {
+    .heading-group {
+      font-size: 2.8rem;
+      line-height: 3rem;
+      margin-top: 10rem; } }
 
 .para-black {
   font-size: 2.4rem;

@@ -87,7 +87,7 @@ body {
     }
 
     &__form-box{
-      flex: 0 0 40%; //grow shrink basis.
+      flex: 1 0 80%; //grow shrink basis.
 
     }
 }
@@ -199,6 +199,7 @@ form {
     text-decoration: none;
     padding: .75rem 1rem;
     margin-top: 1.618rem;
+    font-size: 3rem;
     font-weight: 400;
     text-align: center;
     text-transform: uppercase;

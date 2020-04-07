@@ -119,7 +119,7 @@ class Form extends React.Component {
                         hum samajhte hai, join kijie podcast ko aur janie kaise ocd se lade corona virus lock down m.
                         <br/>
                         <br/>
-                        fill the form to listen podcast.
+
                         <h1 className='form-title'>fill the form to listen podcast.</h1>
                     </h3>
                </div>

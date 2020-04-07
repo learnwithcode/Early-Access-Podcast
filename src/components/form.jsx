@@ -15,7 +15,19 @@ class Whatsapp extends React.Component {
     render() {
         return(
             <React.Fragment>
-            <h1 className='heading-tertiary'>We have sent you the podcast link in email meanwhile Join Our Whatsapp community</h1>
+            <h1 className='heading-tertiary'>For contamination ocd</h1>
+            <a id='formButton' target="_blank" className='btn--green' href="https://chat.whatsapp.com/JbyJNdkDTsH40QR9wJbWWK ">Join Whatsapp Group</a>
+            <br/>
+            <br/>
+            <h1 className='heading-tertiary'>For religious ocd</h1>
+            <a id='formButton' target="_blank" className='btn--green' href="https://chat.whatsapp.com/FBY9kwS6wHZBr4kzMy3KH5">Join Whatsapp Group</a>
+            <br/>
+            <br/>
+            <h1 className='heading-tertiary'>For sexual ocd</h1>
+            <a id='formButton' target="_blank" className='btn--green' href="https://chat.whatsapp.com/HPHfJKnAdYN1ye7zinS5Ze">Join Whatsapp Group</a>
+            <br/>
+            <br/>
+            <h1 className='heading-tertiary'>Other ocd</h1>
             <a id='formButton' target="_blank" className='btn--green' href="https://chat.whatsapp.com/HqJhGflNvlKHmPBhKcN4ye">Join Whatsapp Group</a>
             </React.Fragment>
 

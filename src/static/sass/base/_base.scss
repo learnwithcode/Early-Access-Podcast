@@ -88,10 +88,10 @@ body {
 
     &__form-box{
       flex: 0 0 40%; //grow shrink basis.
-      @include respond(phone) { 
-        flex: 1 0 50%; //grow shrink basis.
+    //   @include respond(phone) { 
+    //     flex: 1 0 50%; //grow shrink basis.
         
-    }
+    // }
     }
 }
 

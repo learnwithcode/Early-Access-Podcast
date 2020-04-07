@@ -66,9 +66,6 @@ body {
         flex: 1 0 100%; } }
   .header__form-box {
     flex: 0 0 40%; }
-    @media (max-width: 37.5em) {
-      .header__form-box {
-        flex: 1 0 50%; } }
 
 form {
   padding: 6rem;
@@ -237,8 +234,8 @@ body {
   line-height: 3rem; }
   @media (max-width: 37.5em) {
     .heading-tertiary {
-      font-size: 2rem;
-      line-height: 2rem;
+      font-size: 2.8rem;
+      line-height: 3rem;
       margin-top: 20rem;
       margin-bottom: 10rem; } }
 

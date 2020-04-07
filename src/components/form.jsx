@@ -113,13 +113,14 @@ class Form extends React.Component {
                <div className='header__text-box'>
                    <h3 className='heading-tertiary'>
 
-                        ye samay sabhi k lie mushkil hai lekin kabhi koi nahi smajhta ki is situation ocd sufferers ki Anxiety badhna, dar lagna ye sab kisi ko nhi dihkta.
+                        ye samay sabhi k lie mushkil hai lekin kabhi koi nahi smajhta ki is situation ocd sufferers ki Anxiety badhna, dar lagna ye sab kisi ko nhi dikhta.
                         <br/>
                         <br/>
                         hum samajhte hai, join kijie podcast ko aur janie kaise ocd se lade corona virus lock down m.
                         <br/>
                         <br/>
                         fill the form to listen podcast.
+                        <h1 className='form-title'>fill the form to listen podcast.</h1>
                     </h3>
                </div>
                <div className='header__form-box'>

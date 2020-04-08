@@ -57,8 +57,8 @@ body {
 
 .header{
   background-image: linear-gradient(to right bottom,
-  rgba(#5EEB5B, 0.7),
-  rgba(#5EEB5B, 0.7)), url(../images/OCD_web.jpg);
+  rgba(#5EEB5B, 0.6),
+  rgba(#5EEB5B, 0.6)), url(../images/OCD_web.jpg);
   background-position: center;
   background-size: cover;
     padding: 15rem;
@@ -67,7 +67,7 @@ body {
   }
     &__container{
       display: flex;
-      justify-content: space-around;
+      justify-content: space-evenly;
       align-items: center;
       flex-wrap: wrap;
     }
@@ -84,7 +84,7 @@ body {
   }
 
     &__text-box{
-      flex: 0 0 40%; //grow shrink basis.
+      flex: 0 0 50%; //grow shrink basis.
 
       @include respond(phone) { 
         flex: 1 0 100%; //grow shrink basis.
@@ -92,7 +92,11 @@ body {
     }
 
     &__form-box{
-      flex: 1 0 80%; //grow shrink basis.
+      flex: 1 0 50%; //grow shrink basis.
+
+      @include respond(phone) { 
+        flex: 1 0 100%; //grow shrink basis.
+    }
 
     }
 }

@@ -42,7 +42,7 @@ body {
   box-sizing: border-box; }
 
 .header {
-  background-image: linear-gradient(to right bottom, rgba(94, 235, 91, 0.7), rgba(94, 235, 91, 0.7)), url(../images/OCD_web.jpg);
+  background-image: linear-gradient(to right bottom, rgba(94, 235, 91, 0.6), rgba(94, 235, 91, 0.6)), url(../images/OCD_web.jpg);
   background-position: center;
   background-size: cover;
   padding: 15rem; }
@@ -51,7 +51,7 @@ body {
       padding: 3rem; } }
   .header__container {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     align-items: center;
     flex-wrap: wrap; }
   .header__logo-box {
@@ -63,12 +63,15 @@ body {
         top: 2rem;
         left: 2rem; } }
   .header__text-box {
-    flex: 0 0 40%; }
+    flex: 0 0 50%; }
     @media (max-width: 37.5em) {
       .header__text-box {
         flex: 1 0 100%; } }
   .header__form-box {
-    flex: 1 0 80%; }
+    flex: 1 0 50%; }
+    @media (max-width: 37.5em) {
+      .header__form-box {
+        flex: 1 0 100%; } }
 
 form {
   padding: 6rem;
@@ -238,7 +241,8 @@ body {
   font-weight: 700;
   color: white;
   text-transform: uppercase;
-  line-height: 3rem; }
+  margin-top: 10rem;
+  line-height: 5rem; }
   @media (max-width: 37.5em) {
     .heading-tertiary {
       font-size: 4rem;

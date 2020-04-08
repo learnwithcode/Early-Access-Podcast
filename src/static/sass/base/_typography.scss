@@ -58,8 +58,9 @@ body {
     font-weight: 700;
     color: white;
     text-transform: uppercase;
+    margin-top: 10rem;
     // text-decoration: underline;
-    line-height: 3rem;
+    line-height: 5rem;
 
     @include respond(phone) {
         font-size: 4rem;

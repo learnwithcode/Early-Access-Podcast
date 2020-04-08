@@ -46,7 +46,7 @@ class WhatsappText extends React.Component {
                     Isilie Cromunity ne aapke lie community banai hai, jha aap un logo say jud skte h jo aap hi ki trah is problem se lad rahe h!
                     <br/>
                     <br/>
-                    yaha aap apne jaise sufferer se jud kar jaan skte hai vo kis trah ocd se ladrahe h, aap doctors or medicine par  le  sakte h, aap akela feel karte h ocd me to unhe dost bna skte h jo aap ko samjhe
+                    yaha aap apne jaise sufferer se jud kar jaan skte hai vo kis trah ocd se ladrahe h, aap doctors or medicine par reviews le  sakte h, aap akela feel karte h ocd me to unhe dost bna skte h jo aap ko samjhe
                     <br/>
                     <br/>
                 </h3>

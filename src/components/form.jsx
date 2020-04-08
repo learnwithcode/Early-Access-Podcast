@@ -149,15 +149,16 @@ class Form extends React.Component {
 
                   {showgroup ? <WhatsappText/>: 
                    <h3 className='heading-tertiary'>
-
-                        ye samay sabhi k lie mushkil hai lekin kabhi koi nahi smajhta ki is situation ocd sufferers ki Anxiety badhna, dar lagna ye sab kisi ko nhi dikhta.
+                        Lock down me Ocd sufferers ki anxiety jada hona, dur lagna, akela feel krna or koi madad na milna 
                         <br/>
                         <br/>
-                        hum samajhte hai, join kijie podcast ko aur janie kaise ocd se lade corona virus lock down m.
+                        Hum samjhte hai!  
                         <br/>
                         <br/>
-
-                        <h1 className='form-title'>fill the form to listen podcast.</h1>
+                        Join kijie podcast aur janie kaise OCD se lade lock down k samay me. 
+                        <br/>
+                        <br/>
+                        <h1 className='form-title'> Join free PODCAST</h1>
                     </h3>
                 }  
                </div>

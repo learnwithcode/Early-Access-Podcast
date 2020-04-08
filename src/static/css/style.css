@@ -42,6 +42,9 @@ body {
   box-sizing: border-box; }
 
 .header {
+  background-image: linear-gradient(to right bottom, rgba(94, 235, 91, 0.7), rgba(94, 235, 91, 0.7)), url(../images/OCD_web.jpg);
+  background-position: center;
+  background-size: cover;
   padding: 15rem; }
   @media (max-width: 37.5em) {
     .header {
@@ -231,14 +234,15 @@ body {
   line-height: 2.8rem; }
 
 .heading-tertiary {
-  font-size: 2.5rem;
-  font-weight: 400;
-  text-transform: capitalize;
+  font-size: 4rem;
+  font-weight: 700;
+  color: white;
+  text-transform: uppercase;
   line-height: 3rem; }
   @media (max-width: 37.5em) {
     .heading-tertiary {
-      font-size: 2.8rem;
-      line-height: 3rem;
+      font-size: 4rem;
+      line-height: 5rem;
       margin-top: 20rem;
       margin-bottom: 10rem; } }
 

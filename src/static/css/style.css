@@ -42,7 +42,7 @@ body {
   box-sizing: border-box; }
 
 .header {
-  background-image: linear-gradient(to right bottom, rgba(94, 235, 91, 0.6), rgba(94, 235, 91, 0.6)), url(../images/OCD_web.jpg);
+  background-image: linear-gradient(to right bottom, rgba(94, 235, 91, 0.5), rgba(94, 235, 91, 0.5)), url(../images/OCD_web.jpg);
   background-position: center;
   background-size: cover;
   padding: 15rem; }

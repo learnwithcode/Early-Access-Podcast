@@ -10,25 +10,27 @@ class ReactFormLabel extends React.Component {
     }
    }
 
+
+   
 class Whatsapp extends React.Component {
 
     render() {
         return(
             <React.Fragment>
             <h2 className='heading-group'>For Contamination Ocd</h2>
-            <a id='formButton' target="_blank" className='btn--green' href="https://chat.whatsapp.com/JbyJNdkDTsH40QR9wJbWWK ">Join Whatsapp Group</a>
+            <a id='formButton' target="_blank" rel="noopener noreferrer" className='btn--green' href="https://chat.whatsapp.com/JbyJNdkDTsH40QR9wJbWWK "> <img src="https://img.icons8.com/color/48/000000/whatsapp.png"/>Join Whatsapp Group</a>
             <br/>
             <br/>
             <h2  className='heading-group'>For Religious Ocd</h2>
-            <a id='formButton' target="_blank" className='btn--green' href="https://chat.whatsapp.com/FBY9kwS6wHZBr4kzMy3KH5">Join Whatsapp Group</a>
+            <a id='formButton' target="_blank"rel="noopener noreferrer" className='btn--green' href="https://chat.whatsapp.com/FBY9kwS6wHZBr4kzMy3KH5"><img src="https://img.icons8.com/color/48/000000/whatsapp.png"/> Join Whatsapp Group</a>
             <br/>
             <br/>
             <h2  className='heading-group'>For Sexual Ocd</h2>
-            <a id='formButton' target="_blank" className='btn--green' href="https://chat.whatsapp.com/HPHfJKnAdYN1ye7zinS5Ze">Join Whatsapp Group</a>
+            <a id='formButton' target="_blank" rel="noopener noreferrer"className='btn--green' href="https://chat.whatsapp.com/HPHfJKnAdYN1ye7zinS5Ze"><img src="https://img.icons8.com/color/48/000000/whatsapp.png"/> Join Whatsapp Group</a>
             <br/>
             <br/>
             <h2  className='heading-group'>Other Ocd</h2>
-            <a id='formButton' target="_blank" className='btn--green' href="https://chat.whatsapp.com/HqJhGflNvlKHmPBhKcN4ye">Join Whatsapp Group</a>
+            <a id='formButton' target="_blank"rel="noopener noreferrer" className='btn--green' href="https://chat.whatsapp.com/HqJhGflNvlKHmPBhKcN4ye"><img src="https://img.icons8.com/color/48/000000/whatsapp.png"/> Join Whatsapp Group</a>
             </React.Fragment>
 
         )
@@ -45,12 +47,17 @@ class WhatsappText extends React.Component {
                     <br/>
                     Isilie Cromunity ne aapke lie community banai hai, jha aap un logo say jud skte h jo aap hi ki trah is problem se lad rahe h!
                     <br/>
-                    <br/>
+                </h3>
+        
+                <img  className="image" src={require('../static/images/cromunity.jpeg')} alt="logo"/>
+                <h3 className='heading-tertiary'>    
                     yaha aap apne jaise sufferer se jud kar jaan skte hai vo kis trah ocd se ladrahe h, aap doctors or medicine par reviews le  sakte h, aap akela feel karte h ocd me to unhe dost bna skte h jo aap ko samjhe
                     <br/>
                     <br/>
-                </h3>
-                <h1 className='form-title'>join kijie cromunity whats app par</h1>
+                    join kijie cromunity whats app par
+                </h3>    
+               
+                
             </React.Fragment> 
         )
     }
@@ -61,7 +68,7 @@ class Form extends React.Component {
         email: '',
         phone: '',
         ocd: '',
-        group: false
+        group: true
        }
      
        handleChange = e => {
@@ -128,7 +135,7 @@ class Form extends React.Component {
                     <select id="cars">
                     <option value="1">CONTAMINATION</option>
                     <option value="2">RELIGIOUS</option>
-                    <option value="3">SOCIAL</option>
+                    <option value="3">SEXSUAL</option>
                     <option value="4">OTHER</option>
                     </select>
                 </fieldset>

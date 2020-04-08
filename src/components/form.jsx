@@ -68,7 +68,7 @@ class Form extends React.Component {
         email: '',
         phone: '',
         ocd: '',
-        group: true
+        group: false
        }
      
        handleChange = e => {

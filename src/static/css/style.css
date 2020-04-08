@@ -253,6 +253,20 @@ body {
       margin-top: 20rem;
       margin-bottom: 10rem; } }
 
+.heading-tertiary--2 {
+  font-size: 4rem;
+  font-weight: 700;
+  color: white;
+  text-transform: uppercase;
+  margin-top: 10rem;
+  line-height: 5rem; }
+  @media (max-width: 37.5em) {
+    .heading-tertiary--2 {
+      font-size: 4rem;
+      line-height: 5rem;
+      margin-top: 5rem;
+      margin-bottom: 5rem; } }
+
 .heading-group {
   font-size: 2.5rem;
   font-weight: 400;

@@ -50,12 +50,13 @@ class WhatsappText extends React.Component {
                 </h3>
         
                 <img  className="image" src={require('../static/images/cromunity.jpeg')} alt="logo"/>
-                <h3 className='heading-tertiary'>    
-                    yaha aap apne jaise sufferer se jud kar jaan skte hai vo kis trah ocd se ladrahe h, aap doctors or medicine par reviews le  sakte h, aap akela feel karte h ocd me to unhe dost bna skte h jo aap ko samjhe
+                <h3 className='heading-tertiary--2'>    
+                    yaha aap apne jaise sufferer se jud kar jaan skte hai vo kis trah ocd se lad rahe h, aap doctors or medicine par reviews le  sakte h, aap akela feel karte h ocd me to unhe dost bna skte h jo aap ko samjhe
                     <br/>
                     <br/>
                     join kijie cromunity whats app par
-                </h3>    
+                </h3>  
+                <h3 className='heading-tertiary--2' style={{'color':'red'}}>Please check your email for podcast link</h3>  
                
                 
             </React.Fragment> 
@@ -68,7 +69,7 @@ class Form extends React.Component {
         email: '',
         phone: '',
         ocd: '',
-        group: false
+        group: true
        }
      
        handleChange = e => {
